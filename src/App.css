@@ -1,0 +1,132 @@
+.iphone {
+  width: 14.115vw;
+  height: 5.052vw;
+  font-family: Inter;
+  font-weight: 36.458vw;
+  font-size: 4.167vw;
+  line-height: 5.208vw;
+  letter-spacing: 0%;
+  color: black;
+  margin-left: 5.208vw;
+  margin-top: 2.604vw;
+  font-weight: 700;
+}
+
+.divatas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.didesain {
+  width: 16.771vw;
+  height: 1.771vw;
+  font-weight: 700;
+  font-family: Inter;
+  font-weight: 36.458vw;
+  font-size: 1.458vw;
+  line-height: 5.208vw;
+  letter-spacing: 0%;
+  color: black;
+  margin-top: 2.604vw;
+  margin-right: 5.208vw;
+}
+
+
+
+.Video {
+  width: 68.333vw;
+  height: 38.438vw;
+  border: 44px;
+  
+
+}
+
+video {
+  border-radius: 44px;
+}
+
+
+.lasttext {
+  width: 37.188vw;
+  height: 3.864vw;
+  font-family: Inter;
+
+  font-weight: 36.458vw;
+  font-size: 2.917vw;
+  line-height: 5.208vw;
+  letter-spacing: 0%;
+  font-weight: 700;
+
+}
+
+
+
+ .Allgambar {
+  gap: 2.563vw;
+  margin-top: 3.646vw;
+  margin-left: 3.125vw;
+  display: flex;
+  width: 106.771vw;
+  height: 50.677vw;
+
+
+}
+
+.Gambar {
+  width: 20.625vw;
+  height: 45.42vw;
+
+} */
+
+
+
+.Allgambar {
+  margin-top: 3.646vw;
+  margin-left: 3.125vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Gambar {
+  width: 20.625vw;
+  height: 45.42vw;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+.divKananKiri {
+  gap: 1.521vw;
+  display: flex;
+  justify-content: end;
+  margin-right: 10.87vw;
+}
+
+/* 
+.kiri {
+  width: 5.882vw;
+  height: 5.882vw;
+}
+
+
+.kanan {
+  width: 5.882vw;
+  height: 5.882vw;
+} */
+
+
+.arrowButton {
+
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+}
+
+/* .arrowButton:focus {
+  outline: none;
+} */
