@@ -30,17 +30,17 @@ function App() {
 
   const swiperRef = useRef(null);
 
-  const scrollToPrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
+  // const scrollToPrev = () => {
+  //   if (swiperRef.current) {
+  //     swiperRef.current.slidePrev();
+  //   }
+  // };
 
-  const scrollToNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
+  // const scrollToNext = () => {
+  //   if (swiperRef.current) {
+  //     swiperRef.current.slideNext();
+  //   }
+  // };
 
   useEffect(() => {
 
@@ -84,6 +84,8 @@ function App() {
             <source src={videoFile} type="video/mp4" />
           </video>
 
+
+
         </div>
 
 
@@ -109,7 +111,7 @@ function App() {
               // onSlideChange={() => console.log('slide change')}
               // onSwiper={(swiper) => console.log(swiper)}
 
-              slidesPerView={3}
+              slidesPerView={4}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               spaceBetween={20}
 
@@ -127,52 +129,21 @@ function App() {
           </div>
 
 
-
-
-          {/* 
-          <div className='Allgambar'>
-            <Swiper
-              // spaceBetween={1}
-              // slidesPerView={'auto'}
-            >
-              <SwiperSlide><img className='Gambar' src={Group1} alt='group1' /></SwiperSlide>
-              <SwiperSlide><img className='Gambar' src={Group2} alt='group2' /></SwiperSlide>
-              <SwiperSlide><img className='Gambar' src={Group3} alt='group3' /></SwiperSlide>
-              <SwiperSlide><img className='Gambar' src={Group4} alt='group4' /></SwiperSlide>
-              <SwiperSlide><img className='Gambar' src={Group5} alt='group5' /></SwiperSlide>
-              <SwiperSlide><img className='Gambar' src={Group6} alt='group6' /></SwiperSlide>
-            </Swiper>
-          </div> */}
-
-
-          {/* <div className='Allgambar'>
-
-              <img className='Gambar' src={Group1} alt='group1' />
-              <img className='Gambar' src={Group2} alt='group2' />
-              <img className='Gambar' src={Group3} alt='group3' />
-              <img className='Gambar' src={Group4} alt='group4' />
-              <img className='Gambar' src={Group5} alt='group5' />
-              <img className='Gambar' src={Group6} alt='group6' />
-
-
-            </div> */}
-
-
         </div>
 
 
         <div className='divKananKiri'>
-          <button className='arrowButton' onClick={scrollToPrev}>
+          <button className='arrowButton' onClick={() => swiperRef.current.slidePrev()}>
             <img src={kiri} alt='kiri' className='kiri' />
           </button>
 
-          <button className='arrowButton' onClick={scrollToNext}>
+          <button className='arrowButton' onClick={() => swiperRef.current.slideNext()}>
             <img src={kanan} alt='kanan' className='kanan' />
           </button>
         </div>
 
 
-      
+
 
 
 
